@@ -1,0 +1,96 @@
+<!-- Abbas Ali   E-mail:absali6693@gmail.com -->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/counterStyle.css">
+    <script type="text/javascript" src="dist/countUp.min.js"></script>  
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1">	
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="row tableText">
+	<div class="col-md-3">
+	<table>
+	<thead>
+	<button type="button" class="btn btn-info btn-circle btn-xl btn-counter-margin" id="myTargetElement1">0</button>
+	</thead>
+	<tbody>
+	<button type="button" class="btn btn-info btn-circle btn-xl btn-label-margin" id="myTargetElemen">Facebook</i></button>
+	</tbody>
+	</table>
+	</div>
+	<div class="col-md-3">
+	<table>
+	<thead>
+	<button type="button" class="btn btn-info btn-circle btn-xl btn-counter-margin" id="myTargetElement2">0</button>
+	</thead>
+	<tbody>
+	<button type="button" class="btn btn-info btn-circle btn-xl btn-label-margin" id="b1">Twitter</i></button>
+	</tbody>
+	</table>
+	</div>
+	<div class="col-md-3">
+	<table>
+	<thead>
+	<button type="button" class="btn btn-info btn-circle btn-xl btn-counter-margin" id="myTargetElement3">0</button>
+	</thead>
+	<tbody>
+	<button type="button" class="btn btn-info btn-circle btn-xl btn-label-margin" id="c1">Google+</i></button>
+	</tbody>
+	</table>
+	</div>
+	<div class="col-md-3">
+	<table>
+	<thead>
+	<button type="button" class="btn btn-info btn-circle btn-xl btn-counter-margin" id="myTargetElement4">0</button>
+	</thead>
+	<tbody>
+	<button type="button" class="btn btn-info btn-circle btn-xl btn-label-margin" id="d1">something</i></button>
+	</tbody>
+	</table>
+	</div>
+</div>	
+</body>
+<script type="text/javascript">
+    var useOnComplete = false,
+        useEasing = true,
+        useGrouping = true,
+        options = {
+            useEasing : useEasing, 
+            useGrouping : useGrouping, 
+            separator : ',',
+            decimal : '.', 
+        }
+    var demo, code, data, stars;
+window.onload=new createCountUp('myTargetElement1','10','20');
+window.onload= new createCountUp('myTargetElement2','0','1000');
+window.onload= new createCountUp('myTargetElement3','0','100');
+window.onload= new createCountUp('myTargetElement4','0','100');
+    function createCountUp(target,startValue,EndValue) {
+        var startVal = startValue;
+        var endVal = EndValue;
+        var decimals ,
+            duration = 2.5,
+            prefix ,
+            suffix;
+        options = {
+            useEasing : useEasing,
+            useGrouping : useGrouping,
+            separator : ',',
+            decimal : '.',
+            prefix: prefix,
+            suffix: suffix
+        }
+        demo = new CountUp(target, startVal, endVal, decimals, duration, options);
+
+        if (useOnComplete) {
+            demo.start(methodToCallOnComplete);
+        } else {
+            demo.start();
+        }
+    }
+    </script>
+</html>

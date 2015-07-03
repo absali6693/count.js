@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+
+.tableText{
+font-size:80px;
+}
+
+
+.spanClass{
+float: left;
+    width: 250px;
+}
